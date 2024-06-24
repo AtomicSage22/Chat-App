@@ -6,7 +6,7 @@ const app = express();
 app.use(express.json());
 app.use(cors(
     {
-        origin: ['chat-app-5wg5npd7x-atomicsage22s-projects.vercel.app'],
+        origin: ['https://chat-app-five-weld.vercel.app/'],
         methods: ['GET', 'POST', 'PUT', 'DELETE'],
         credentials: true,
     }));
