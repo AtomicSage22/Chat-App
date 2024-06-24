@@ -4,7 +4,12 @@ const {default: axios} = require("axios");
 
 const app = express();
 app.use(express.json());
-app.use(cors({ origin: true }));
+app.use(cors(
+    {
+        origin: ['chat-app-5wg5npd7x-atomicsage22s-projects.vercel.app'],
+        methods: ['GET', 'POST', 'PUT', 'DELETE'],
+        credentials: true,
+    }));
 
 app.get('/', (req, res) => {
     res.send('Hello World!')
